@@ -1,0 +1,11 @@
+{% extends '_base.html' %}
+
+{% block content %}
+
+<h1>
+Logged in as: {{request.user.username|capfirst}}
+</h1>
+
+<a href="{% url 'logout' %}" class="btn btn-danger">Logout</a>
+
+{% endblock content %}
